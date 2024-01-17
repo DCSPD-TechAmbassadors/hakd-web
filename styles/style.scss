@@ -110,3 +110,17 @@ section {
         max-width: 45%;
     }
 }
+
+#schedule {
+    table {
+        th {
+            background-color: var(--c-accent);
+            color: var(--bs-light);
+        }
+        td {
+            background-color: var(--bs-primary-bg-subtle);
+            color: var(--bs-light);
+        }
+    }
+    color: var(--bs-dark);
+}

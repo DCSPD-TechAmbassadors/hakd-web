@@ -95,4 +95,16 @@ section {
   max-width: 45%;
 }
 
+#schedule {
+  color: var(--bs-dark);
+}
+#schedule table th {
+  background-color: var(--c-accent);
+  color: var(--bs-light);
+}
+#schedule table td {
+  background-color: var(--bs-primary-bg-subtle);
+  color: var(--bs-light);
+}
+
 /*# sourceMappingURL=style.css.map */
