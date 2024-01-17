@@ -83,8 +83,9 @@ section {
 
 #process .card {
     padding: 0;
+    width: 40%;
+    min-width: 350px;
     min-height: 350px;
-    max-width: 40%;
     --bs-card-bg: #230F34;
 
     .card-img-top {
