@@ -84,4 +84,14 @@ section {
   padding: 24px;
 }
 
+#logistics #logistics-map {
+  height: 500px;
+  max-width: 45%;
+}
+#logistics #logistics-right {
+  padding-left: 50px;
+  padding-right: 50px;
+  max-width: 45%;
+}
+
 /*# sourceMappingURL=style.css.map */
