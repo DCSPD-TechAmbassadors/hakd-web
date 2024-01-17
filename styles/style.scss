@@ -84,7 +84,7 @@ section {
 #process .card {
     padding: 0;
     width: 40%;
-    min-width: 350px;
+    min-width: 500px;
     min-height: 350px;
     --bs-card-bg: #230F34;
 
@@ -112,6 +112,10 @@ section {
 }
 
 #schedule {
+    .col {
+        max-width: 500px;
+        min-width: 400px;
+    }
     table {
         th {
             background-color: var(--c-accent);
