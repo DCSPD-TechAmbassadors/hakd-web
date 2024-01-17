@@ -70,13 +70,18 @@ section {
 }
 
 #process .card {
+  padding: 0;
   min-height: 350px;
   max-width: 40%;
   --bs-card-bg: #230F34;
 }
 #process .card .card-img-top {
-  max-height: 250px;
+  width: 100%;
+  max-height: 300px;
   object-fit: cover;
+}
+#process .card .card-body {
+  padding: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */
