@@ -97,6 +97,9 @@ section {
   padding-top: 80px;
   padding-bottom: 80px;
 }
+#start-info .container {
+  max-width: 960px;
+}
 
 #process .card {
   padding: 0;
