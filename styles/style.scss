@@ -46,6 +46,13 @@ h1, h2, h3 {
         --bs-navbar-brand-hover-color: var(--bs-light);
         --bs-navbar-color: var(--bs-light);
         --bs-navbar-hover-color: var(--bs-secondary-bg-subtle);
+
+        #signup-button {
+            background-color: var(--c-accent);
+            &:hover {
+                background-color: var(--bs-secondary-bg-subtle);
+            }
+        }
     }
 }
 

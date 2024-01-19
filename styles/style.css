@@ -43,6 +43,12 @@ h1, h2, h3 {
   --bs-navbar-color: var(--bs-light);
   --bs-navbar-hover-color: var(--bs-secondary-bg-subtle);
 }
+#nav-top nav.navbar #signup-button {
+  background-color: var(--c-accent);
+}
+#nav-top nav.navbar #signup-button:hover {
+  background-color: var(--bs-secondary-bg-subtle);
+}
 
 section {
   padding-bottom: 80px;
