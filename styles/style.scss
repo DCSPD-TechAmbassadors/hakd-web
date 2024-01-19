@@ -10,12 +10,12 @@
 
 @font-face {
     font-family: Moontime;
-    src: url("../assets/fonts/MoonTime-Regular.ttf");
+    src: local(Moontime), url("../assets/fonts/MoonTime-Regular.ttf");
 }
 
 @font-face {
     font-family: Bebas-Neue;
-    src: url("../assets/fonts/BebasNeue-Regular.ttf");
+    src: local(Bebas Neue), url("../assets/fonts/BebasNeue-Regular.ttf");
 }
 
 h1, h2, h3 {
