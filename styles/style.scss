@@ -47,8 +47,18 @@ h1, h2, h3 {
         --bs-navbar-color: var(--bs-light);
         --bs-navbar-hover-color: var(--bs-secondary-bg-subtle);
 
+        .navbar-nav .nav-link.active {
+            transition: all 0.5s;
+
+            &:hover {
+                text-shadow: 0 0 1px #970fbd, 0 0 2px #970fbd, 0 0 3px #970fbd, 0 0 5px #e894ff, 0 0 6px #e894ff;
+            }
+        }
+
         #signup-button {
             background-color: var(--c-accent);
+            transition: all 0.5s;
+
             &:hover {
                 background-color: var(--bs-secondary-bg-subtle);
             }
