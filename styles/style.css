@@ -60,7 +60,12 @@ section {
   object-fit: cover;
   object-position: center;
 }
-#title-bg::before {
+@media (min-width: 1200px) {
+  #title-bg img {
+    margin-top: calc(20vw - 240px);
+  }
+}
+#title-bg::after {
   content: "";
   position: absolute;
   top: 0;
@@ -88,7 +93,7 @@ section {
   margin-top: -10px;
   font-family: "Moontime", sans-serif;
   color: #48eaff;
-  font-size: calc(4.5rem + 6vw);
+  font-size: calc(4.9rem + 5.5vw);
   text-shadow: 0 0 5px #b3fcff;
 }
 

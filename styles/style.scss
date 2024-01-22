@@ -64,8 +64,11 @@ section {
         width: 100%;
         object-fit: cover;
         object-position: center;
+        @media (min-width: 1200px) {
+            margin-top: calc(20vw - 0.2*1200px);
+        }
     }
-    &::before {
+    &::after {
         content: '';
         position: absolute;
         top: 0; left: 0; right: 0; bottom: 0;
@@ -92,7 +95,7 @@ section {
         margin-top: -10px;
         font-family: "Moontime", sans-serif;
         color: #48eaff;
-        font-size: calc(4.5rem + 6vw);
+        font-size: calc(4.9rem + 5.5vw);
         text-shadow: 0 0 5px #b3fcff;
     }
 }
