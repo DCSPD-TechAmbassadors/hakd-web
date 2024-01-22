@@ -122,8 +122,7 @@ section {
     padding: 0;
     --bs-card-border-color: var(--c-accent);
     --bs-card-border-width: 10px;
-    width: 40%;
-    min-width: 500px;
+    max-width: 500px;
     min-height: 350px;
     --bs-card-bg: #230F34;
 
