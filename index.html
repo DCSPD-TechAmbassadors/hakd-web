@@ -11,19 +11,18 @@
 </head>
 <body>
 <!-- Navbar -->
-<header id="nav-top">
+<header id="nav-top" data-bs-theme="dark">
   <nav class="navbar sticky-top navbar-expand-md bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand">
         <img src="assets/img/hakd-logo-2024.svg" alt="Tech Ambassador" height=40 class="mx-2">
         HakD 2024: Need For Speed
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse flex-column align-items-end">
-        <ul class="navbar-nav p-2 mb-md-0">
+      <div id="nav-collapse" class="collapse navbar-collapse flex-row justify-content-end">
+        <ul class="navbar-nav p-2 mb-md-0 flex-row justify-content-between">
           <li class="nav-item">
             <a class="nav-link active p-0 ps-2 pe-2" aria-current="page" href="#">Home</a>
           </li>
@@ -46,9 +45,9 @@
             <a class="nav-link disabled p-0 ps-2 pe-2" aria-disabled="true">Scenarios</a>
           </li>
         </ul>
-      </div>
-      <div id="signup-button" class="align-self-stretch d-flex align-items-center m-1 px-2">
-        <a href="#" class="nav-link">Sign up</a>
+        <div id="signup-button" class="align-self-stretch d-flex align-items-center m-1 px-2">
+          <a href="#" class="nav-link">Sign up</a>
+        </div>
       </div>
     </div>
   </nav>

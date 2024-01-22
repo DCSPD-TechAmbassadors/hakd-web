@@ -40,17 +40,12 @@ h1, h2, h3 {
         font-size: 1.3rem;
         --bs-navbar-brand-font-size: 1.4rem;
 
-        --bs-navbar-active-color: var(--bs-secondary-bg-subtle);
-        --bs-navbar-disabled-color: #8a98a6;
-        --bs-navbar-brand-color: var(--bs-light);
-        --bs-navbar-brand-hover-color: var(--bs-light);
-        --bs-navbar-color: var(--bs-light);
-        --bs-navbar-hover-color: var(--bs-secondary-bg-subtle);
+        --bs-navbar-active-color: #E894FF;
 
         #signup-button {
             background-color: var(--c-accent);
             &:hover {
-                background-color: var(--bs-secondary-bg-subtle);
+                background-color: var(--bs-navbar-active-color);
             }
         }
     }
@@ -67,7 +62,6 @@ section {
     z-index: -10;
     img {
         width: 100%;
-        height: 100%;
         object-fit: cover;
         object-position: center;
     }
@@ -108,7 +102,7 @@ section {
     padding-bottom: 80px;
 
     .container {
-        max-width: 960px;
+        max-width: 800px;
     }
 }
 
