@@ -81,6 +81,7 @@ section {
 @media (max-width: 992px) {
   #workshops-list .card .card-img {
     min-width: 100%;
+    width: 100%;
     min-height: 0;
     max-height: 300px;
   }
