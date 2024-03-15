@@ -1,0 +1,99 @@
+:root {
+  --bs-body-font-size: 17px;
+  --c-accent: #C118AD;
+
+  --bs-primary-bg-subtle: #230F34;
+  --bs-secondary-bg-subtle: #E894FF;
+  --bs-body-bg: #212529;
+  --bs-body-color: #DEE2E6;
+}
+
+@font-face {
+  font-family: Moontime;
+  src: local(Moontime), url("../assets/fonts/MoonTime-Regular.ttf");
+}
+
+@font-face {
+  font-family: Bebas-Neue;
+  src: local(Bebas Neue), url("../assets/fonts/BebasNeue-Regular.ttf");
+}
+
+h1, h2, h3, h4 {
+  font-family: "Bebas-Neue", sans-serif;
+}
+
+#nav-top {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  font-family: "Bebas-Neue", sans-serif;
+
+  nav.navbar {
+    font-size: 1.3rem;
+    --bs-navbar-brand-font-size: 1.4rem;
+
+    --bs-navbar-active-color: #E894FF;
+
+    .navbar-nav .nav-link.active {
+      transition: all 0.5s;
+
+      &:hover {
+        text-shadow: 0 0 1px #970fbd, 0 0 2px #970fbd, 0 0 3px #970fbd, 0 0 5px #e894ff, 0 0 6px #e894ff;
+      }
+    }
+
+    #signup-button {
+      background-color: var(--c-accent);
+      transition: all 0.5s;
+
+      &:hover {
+        background-color: var(--bs-navbar-active-color);
+      }
+    }
+  }
+}
+
+section {
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+
+#title-card {
+  .container {
+    padding-top: 90px + 90px;
+    padding-bottom: 90px;
+  }
+  h3 {
+    color: var(--bs-light);
+    margin-top: 160px;
+  }
+  #theme-text {
+    font-family: "Bebas-Neue", sans-serif;
+    color: #e894ff;
+    font-size: calc(3.7rem + 3.7vw);
+    text-shadow: 0 0 10px #970fbd;
+  }
+}
+
+#workshops-list .card {
+  padding: 0;
+  --bs-card-border-color: var(--c-accent);
+  --bs-card-border-width: 10px;
+  --bs-card-bg: #230F34;
+
+  .card-title {
+    font-size: calc(1.75rem + 1vw);
+  }
+
+  .card-img {
+    width: 400px;
+    min-height: 100%;
+    object-fit: cover;
+
+    @media (max-width: 992px) {
+      min-width: 100%;
+      min-height: 0;
+      max-height: 300px;
+    }
+  }
+}
