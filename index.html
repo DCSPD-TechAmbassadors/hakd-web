@@ -1,289 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HakD 2024: Need For Speed</title>
-  <link rel="icon" type="image/x-icon" href="assets/img/hakd-logo-2024.svg">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-<!-- Navbar -->
-<header id="nav-top" data-bs-theme="dark">
-  <nav class="navbar sticky-top navbar-expand-md bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand">
-        <img src="assets/img/hakd-logo-2024.svg" alt="Tech Ambassador" height=40 class="mx-2">
-        HakD 2024: Need For Speed
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div id="nav-collapse" class="collapse navbar-collapse flex-row justify-content-end">
-        <ul class="navbar-nav p-2 mb-md-0 flex-row justify-content-between">
-          <li class="nav-item">
-            <a class="nav-link active p-0 ps-2 pe-2" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <div class="vr h-100 mx-lg-1 text-white"></div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link p-0 ps-2 pe-2" href="https://dcigroupadmin-my.sharepoint.com/:f:/g/personal/daniel_gu25_stu_dulwich_org/EuvTHMkJtVdGtlKXmkJ4NnsBXKTmdlctu04DZLupC3uKcg?e=VnriVt">Resources</a>
-          </li>
-          <li class="nav-item">
-            <div class="vr h-100 mx-lg-1 text-white"></div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link p-0 ps-2 pe-2" href="workshops.html">Workshops</a>
-          </li>
-          <li class="nav-item">
-            <div class="vr h-100 mx-lg-1 text-white"></div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link p-0 ps-2 pe-2" href="scenarios.html">Scenarios</a>
-          </li>
-        </ul>
-        <a href="https://yoopay.cn/event/21348046" class="nav-link">
-          <div id="signup-button" class="align-self-stretch d-flex align-items-center m-1 px-2">Sign up</div>
-        </a>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HakD 2025: To the Stars</title>
+    <!--<link rel="icon" type="image/x-icon" href="assets/img/hakd-logo-2024.svg">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <!-- Star background -->
+    <div id="stars">
+      <div class="star" style="--offset-z: -300px; z-index: -10"></div>
+      <div class="star" style="--offset-z: -100px; z-index: -10"></div>
+      <div class="star" style="--offset-z: 100px; z-index: 10"></div>
+      <div class="star" style="--offset-z: 300px; z-index: 10"></div>
+    </div>
+
+    <!-- Navbar -->
+    <header id="nav-top">
+      <nav class="navbar navbar-expand sticky-top">
+        <div class="container-fluid">
+          <div class="navbar-brand hover-color">
+            HakD 2025: To the Stars
+          </div>
+          <div class="navbar-nav nav-button-container">
+            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link hover-color" href="#">Teams</a>
+            <a class="nav-link hover-color" href="#">Workshops</a>
+            <a class="nav-link hover-color" href="#">Scenarios</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Welcome card -->
+    <div id="intro-card" class="container text-center fancyborder">
+      <h2 class="display-1">Welcome to HakD!</h2>
+      <div class="text-content mx-5">
+        <p>HakD is an entirely <b>student-led</b> event of the year for young tech enthusiasts, innovators and&nbsp;creators.</p>
+        <p>Open to all students from <b>Year 6 (Grade 5) and above</b>, HakD is your chance to unleash your creativity, dive into STEAM and tackle real-world challenges in an exciting, collaborative&nbsp;environment.</p>
       </div>
     </div>
-  </nav>
-</header>
 
-<!-- Title card -->
-<div id="title-bg" class="position-fixed">
-  <img style="height: 800px;" src="assets/img/vaporwave.gif" alt="Animated vapor wave background"/>
-</div>
-<section id="title-card" class="p-0">
-  <h3 class="position-absolute w-100 text-center">HakD 2024:</h3>
-  <div class="container d-flex flex-column align-items-center">
-    <h1 id="theme-overlay-text" class="position-absolute text-center">Need For Speed</h1>
-    <h1 id="theme-text" class="unselectable text-center">Need For Speed</h1>
-  </div>
-</section>
+    <div class="container text-center vspace" style="max-width: 600px">
+      No experience? No problem! HakD is designed for everyone, whether you’re a coding pro or just getting started. All you need is your passion for technology and a willingness to learn.
+    </div>
 
-<section id="start-info" class="bg-primary-subtle">
-  <div class="container">
-    <h1 class="display-2">Welcome to HakD!</h1>
-
-    <p>HakD is a hackathon for everyone – people just like you, the person that sits next to you in history, and the other guy who is eating Pringles – yes, all of you are invited!</p>
-    <p>Hackathons (contrary to teachers’ concerns) are not events that encourage people to become Neo and hack into the Matrix. Rather, they are about challenging yourself to push the fundamental boundaries of what you can truly create.</p>
-    <p>For those who are new to programming, this is a great opportunity for you to try it out and see if it is something you would like to pursue in the future. For those who want to flex their skills in creating awesome products with others, this is also a great opportunity for you to meet new people that share the same passions as you!</p>
-    <p>We are excited to give you the best possible experience and (hopefully) persuade you to follow the path of technology to infinity and beyond! </p>
-  </div>
-</section>
-
-<!-- Steps -->
-<section id="process" class="bg-secondary-subtle">
-  <div id="cards-container" class="container-fluid">
-    <div class="row row-cols-lg-2 row-gap-5 column-gap-5 justify-content-center">
-      <div class="card my-3">
-        <img class="card-img-top" src="assets/img/register-min.jpeg" alt=""/>
-        <div class="card-body">
-          <h2 class="card-title">1 - Register</h2>
-          <p class="card-text">To sign up for HakD, speak to your local CS teacher or equivalent and get in a pair with someone from your school. When you arrive at the event, you will receive a swag bag full of HakD themed goodies! We will group your pair with another pair from a different school to form a team of 4 students.</p>
+    <!-- Steps -->
+    <div id="steps-card" class="container text-center fancyborder">
+      <h2 class="display-5">What do I do at HakD?</h2>
+      <div class="row px-5" style="max-width: 100%">
+        <div class="col-md-8 py-3">
+          <h3>1 - Register</h3>
+          <p>Use the link or QR code at the bottom of this page to sign up. When you arrive at the event, you will receive a swag bag full of HakD themed goodies! We will group your pair with another pair from a different school to form a team of 4 students.</p>
         </div>
-      </div>
-      <div class="card my-3">
-        <img class="card-img-top" src="assets/img/workshops-min.jpeg" alt=""/>
-        <div class="card-body">
-          <h2 class="card-title">2 - Workshops</h2>
-          <p class="card-text">On the first day of the event, you will participate in tech-related workshops! You will join the workshops and learn new skills like coding robots, hacking and building robots. If you're feeling tactical, you can coordinate which workshops to attend as a group so you can combine the knowledge from all the workshops in the next step!</p>
+        <div class="col-md-4">
+          <img src="assets/img/register-min.jpeg" class="steps-img">
         </div>
-      </div>
-      <div class="card my-3">
-        <img class="card-img-top" src="assets/img/projects-min.jpeg" alt=""/>
-        <div class="card-body">
-          <h2 class="card-title">3 - Projects</h2>
-          <p class="card-text">You will also be given a set of scenarios based on our theme of Need for Speed, which will be revealed during the Opening Ceremony. As a team, you will pick a scenario and work on solving it through technology. Your prototype can involve software, hardware, or both!</p>
+        <div class="col-md-8 py-3">
+          <h3>2 - Workshops</h3>
+          <p>On the first day of the event, you will participate in tech-related workshops! You will join the workshops and learn new skills like coding robots, hacking and building robots. If you're feeling tactical, you can coordinate which workshops to attend as a group so you can combine the knowledge from all the workshops in the next step!</p>
         </div>
-      </div>
-      <div class="card my-3">
-        <img class="card-img-top" src="assets/img/pitch-min.jpeg" alt=""/>
-        <div class="card-body">
-          <h2 class="card-title">4 - Present!</h2>
+        <div class="col-md-4">
+          <img src="assets/img/workshops-min.jpeg" class="steps-img">
+        </div>
+        <div class="col-md-8 py-3">
+          <h3>3 - Projects</h3>
+          <p>You will also be given a set of scenarios based on our theme of Need for Speed, which will be revealed during the Opening Ceremony. As a team, you will pick a scenario and work on solving it through technology. Your prototype can involve software, hardware, or both!</p>
+        </div>
+        <div class="col-md-4">
+          <img src="assets/img/projects-min.jpeg" class="steps-img">
+        </div>
+        <div class="col-md-8 py-3">
+          <h3>4 - Present</h3>
           <p class="card-text">At the end of the event, you will get the opportunity to present your products in a science fair style presentation. Good luck!</p>
         </div>
+        <div class="col-md-4">
+          <img src="assets/img/pitch-min.jpeg" class="steps-img">
+        </div>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- Logistics  -->
-<section id="logistics" class="bg-primary-subtle">
-  <div class="container">
-    <h1 class="display-4">Logistics</h1>
-    <div class="row flex-row-reverse row-cols-lg-2 justify-content-center">
-      <div id="logistics-right">
-        <h3>Location</h3>
-        <p>266 Lan An Rd, Jinqiao, Pudong, Shanghai
-          <br>
-          上海浦东新区蓝桉路266号
-          <br>
-          201206
-        </p>
-        <h3>Accomodation</h3>
-        <p>Ramada Plaza Hotel, 18 Xin Jinqiao Road, Pudong, Shanghai 201206</p>
-        <h3>Contact</h3>
-        <p><a href="mailto:hakd.shanghaipudong@dulwich.org">hakd.shanghaipudong@dulwich.org</a></p>
-      </div>
-      <div id="logistics-map" class="bg-dark p-0">
-        <iframe class="w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1705.686171893009!2d121.5849250816147!3d31.23811423995541!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35b2765f28bf15cd%3A0x9e4ade311a026fcb!2sDulwich%20College%20Shanghai!5e0!3m2!1sen!2sus!4v1567328690264!5m2!1sen!2sus" allowfullscreen=""></iframe>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Trailer (incomplete) -->
-<!--<section id="trailer" class="bg-dark">-->
-<!--  <div class="container">-->
-<!--    <h1>Trailer</h1>-->
-<!--    <div style="height: 300px;"></div>-->
-<!--  </div>-->
-<!--</section>-->
-
-<!-- Schedule -->
-<section id="schedule" class="bg-secondary-subtle">
-  <div class="container">
-    <h1 class="display-4">Schedule</h1>
-    <div class="row row-gap-5 justify-content-center">
-      <div class="col">
-        <h2>Day 1 - Saturday 16th march</h2>
-        <table class="table">
-          <tr>
-            <th>Time</th>
-            <th>Activity</th>
-            <th>Location</th>
-          </tr>
-          <tr>
-            <td>08:00 - 09:00</td>
-            <td>Registration</td>
-            <td>Senior School Lunch&nbsp;Hall</td>
-          </tr>
-          <tr>
-            <td>09:00 - 09:30</td>
-            <td>Opening Ceremony</td>
-            <td>School Theatre</td>
-          </tr>
-          <tr>
-            <td>09:30 - 10:30</td>
-            <td>Workshop Fair</td>
-            <td>Senior School Lunch&nbsp;Hall</td>
-          </tr>
-          <tr>
-            <td>10:30 - 11:30</td>
-            <td colspan=2>Workshop 1</td>
-          </tr>
-          <tr>
-            <td>11:30 - 11:45</td>
-            <td>Break</td>
-            <td>Outside</td>
-          </tr>
-          <tr>
-            <td>11:45 - 12:45</td>
-            <td colspan=2>Workshop 2</td>
-          </tr>
-          <tr>
-            <td>12:45 - 13:15</td>
-            <td>Lunch</td>
-            <td>Senior School Lunch&nbsp;Hall</td>
-          </tr>
-          <tr>
-            <td>13:15 - 17:30</td>
-            <td colspan=2>Project Time</td>
-          </tr>
-          <tr>
-            <td>17:30 - 18:00</td>
-            <td>Dinner</td>
-            <td>Senior School Lunch&nbsp;Hall</td>
-          </tr>
-          <tr>
-            <td>18:00 - 20:00</td>
-            <td colspan=2>Project Time</td>
-          </tr>
-          <tr>
-            <td>20:00</td>
-            <td colspan=2>Departure Y6-Y8</td>
-          </tr>
-          <tr>
-            <td>20:00 - 21:30</td>
-            <td colspan=2>Project Time</td>
-          </tr>
-          <tr>
-            <td>21:30</td>
-            <td colspan=2>Departure Y9+</td>
-          </tr>
-        </table>
-      </div>
-      <div class="col">
-        <h2>Day 2 - Sunday 17th March</h2>
-        <table class="table">
-          <tr>
-            <th>Time</th>
-            <th>Activity</th>
-            <th>Location</th>
-          </tr>
-          <tr>
-            <td>09:00 - 09:30</td>
-            <td>Briefing</td>
-            <td>Senior School Lunch&nbsp;Hall</td>
-          </tr>
-          <tr>
-            <td>09:30 - 11:30</td>
-            <td colspan=2>Project Time</td>
-          </tr>
-          <tr>
-            <td>11:30 - 11:45</td>
-            <td>Break</td>
-            <td>Outside</td>
-          </tr>
-          <tr>
-            <td>11:45 - 12:15</td>
-            <td>Project Set Up</td>
-            <td>Senior School Lunch&nbsp;Hall</td>
-          </tr>
-          <tr>
-            <td>12:15 - 13:00</td>
-            <td>Judging</td>
-            <td>Junior School Lunch&nbsp;Hall</td>
-          </tr>
-          <tr>
-            <td>13:00 - 13:45</td>
-            <td>Lunch</td>
-            <td>Senior School Lunch&nbsp;Hall</td>
-          </tr>
-          <tr>
-            <td>13:45 - 14:15</td>
-            <td>Finalist Presentations</td>
-            <td>School Theatre</td>
-          </tr>
-          <tr>
-            <td>14:15 - 15:00</td>
-            <td>Closing Ceremony</td>
-            <td>School Theatre</td>
-          </tr>
-          <tr>
-            <td>15:00</td>
-            <td colspan=2>Departure</td>
-          </tr>
-        </table>
+    <!-- What to bring thing -->
+    <div id="bringlist" class="container fancyborder">
+      <h2 class="display-5 text-center">What to bring?</h2>
+      <div class="container row justify-content-evenly px-5">
+        <div class="col px-3">
+          <h3>We've got you covered with:</h3>
+          <ul>
+            <li>Arduino boards</li>
+            <li>Raspberry Pis</li>
+            <li>Robotics kits</li>
+            <li>3D printers</li>
+            <li>Laser cutters</li>
+            <li>VR kits</li>
+            <li>And more…</li>
+          </ul>
+        </div>
+        <div class="col px-3">
+          <h3>You need to bring:</h3>
+          <ul>
+            <li>Laptop and charger</li>
+            <li>Pocket money for snacks</li>
+            <li>Water bottle</li>
+            <li>Your passion for technology</li>
+            <li>Any other tools you think you'll need</li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- Footer -->
-<footer class="d-flex justify-content-center py-5">
-  <img src="assets/img/hakd-logo-x48.png" alt="Tech Ambassador" height="48">
-  <div class="vr mx-3"></div>
-  <img src="assets/img/tech-ambassadors-x48.png" alt="Tech Ambassador" height="48">
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
-</body>
+    <div id="register" class="container fancyborder text-center">
+      <h2 class="display-5">Regster!</h2>
+      <p>
+        Access the link or QR code below to register for HakD 2025!<br>
+        <a href="https://yoopay.cn/event/hakd2025">https://yoopay.cn/event/hakd2025</a>
+      </p>
+      <div class="d-flex justify-content-center my-3">
+        <img src="assets/img/signup-qr.png" width="300px">
+      </div>
+    </div>
+
+    <div id="moreinfo" class="text-center">
+      <h2 class="display-4 text-center">More information and queries</h2>
+      <p>We will keep this site updated with new information - please check this site regularly!</p>
+      <p>Email queries: <a href="mailto:hakd.shanghaipudong@dulwich.org">hakd.shanghaipudong@dulwich.org</a></p>
+    </div>
+
+    <script src="scripts/script.js"></script>
+  </body>
 </html>
