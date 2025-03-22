@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HakD 2025: To the Stars</title>
+    <!--<link rel="icon" type="image/x-icon" href="assets/img/hakd-logo-2024.svg">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <!-- Star background -->
+    <div id="stars">
+      <div class="star" style="--offset-z: -600px; z-index: -10"></div>
+      <div class="star" style="--offset-z: -300px; z-index: -10"></div>
+      <div class="star" style="--offset-z: -100px; z-index: -10"></div>
+    </div>
+
+    <!-- Navbar -->
+    <header id="nav-top">
+      <nav class="navbar navbar-expand">
+        <div class="container-fluid">
+          <div class="navbar-brand hover-color">
+            HakD 2025: <span class="font-starjedi">To the Stars</span>
+          </div>
+          <div class="navbar-nav nav-button-container">
+            <a class="nav-link hover-color" href="index.html">Home</a>
+            <a class="nav-link active" href="#">Logistics</a>
+            <a class="nav-link hover-color" href="workshops.html">Workshops</a>
+            <a class="nav-link hover-color" href="assets/hakd2025-scenarios.pdf" target="_blank" rel="noopener noreferrer">Scenarios</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div id="title" class="container-fluid text-center">
+      <h1 class="display-1">Logistics</h1>
+    </div>
+
+    <!-- Schedule card -->
+    <div id="schedule" class="container text-center fancyborder">
+      <h2 class="display-5">Schedule</h2>
+      <div class="text-content mx-5 my-5">
+        <h3>Day 1 - Saturday, 22 March</h3>
+        <table class="table table-striped">
+          <thead>
+            <tr><th>Time</th><th>Activity</th><th>Location</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>08:00 - 09:00</td><td>Registration</td><td>Senior School Lobby</td></tr>
+            <tr><td>09:00 - 10:00</td><td>Opening Ceremony</td><td>School Theatre</td></tr>
+            <tr><td>10:00 - 10:30</td><td>Workshop Fair</td><td>Senior School Lunch Hall</td></tr>
+            <tr><td>10:30 - 11:30</td><td>Workshop 1</td><td>Various</td></tr>
+            <tr><td>11:30 - 11:45</td><td>Break</td><td>Outside</td></tr>
+            <tr><td>11:45 - 12:45</td><td>Workshop 2</td><td>Various</td></tr>
+            <tr><td>12:45 - 13:15</td><td>Lunch</td><td>Senior School Lunch Hall</td></tr>
+            <tr><td>13:15 - 17:30</td><td>Project Time</td><td>Various</td></tr>
+            <tr><td>17:30 - 18:00</td><td>Dinner</td><td>Senior School Lunch Hall</td></tr>
+            <tr><td>18:00 - 20:00</td><td>Project Time</td><td>Various</td></tr>
+            <tr><td>20:00</td><td>Departure (Y6 - Y8)</td><td>-</td></tr>
+            <tr><td>20:00 - 21:30</td><td>Project Time</td><td>Various</td></tr>
+            <tr><td>21:30</td><td>Departure (Y9+)</td><td>-</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="text-content mx-5 my-5">
+        <h3>Day 2 - Sunday, 23 March</h3>
+        <table class="table table-striped">
+          <thead>
+            <tr><th>Time</th><th>Activity</th><th>Location</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>09:00 - 09:30</td><td>Briefing</td><td>Senior School Lunch Hall</td></tr>
+            <tr><td>09:30 - 11:30</td><td>Project Time</td><td>Various</td></tr>
+            <tr><td>11:30 - 11:45</td><td>Break</td><td>Outside</td></tr>
+            <tr><td>11:45 - 12:15</td><td>Project Set Up</td><td>Senior School Lunch Hall</td></tr>
+            <tr><td>12:15 - 13:00</td><td>Judging</td><td>Junior School Lunch Hall</td></tr>
+            <tr><td>13:00 - 13:45</td><td>Lunch</td><td>Senior School Lunch Hall</td></tr>
+            <tr><td>13:45 - 14:15</td><td>Finalist Presentations</td><td>School Theatre</td></tr>
+            <tr><td>14:15 - 15:00</td><td>Closing Ceremony</td><td>School Theatre</td></tr>
+            <tr><td>15:00</td><td>Departure</td><td>-</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Campus Map -->
+    <div id="map-card" class="container text-center fancyborder">
+      <h2 class="display-5">Campus Map</h2>
+      <img src="assets/img/map.png">
+    </div>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

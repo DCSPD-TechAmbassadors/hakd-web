@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HakD 2025: To the Stars</title>
+    <!--<link rel="icon" type="image/x-icon" href="assets/img/hakd-logo-2024.svg">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <!-- Star background -->
+    <div id="stars">
+      <div class="star" style="--offset-z: -600px; z-index: -10"></div>
+      <div class="star" style="--offset-z: -300px; z-index: -10"></div>
+      <div class="star" style="--offset-z: -100px; z-index: -10"></div>
+    </div>
+
+    <!-- Navbar -->
+    <header id="nav-top">
+      <nav class="navbar navbar-expand">
+        <div class="container-fluid">
+          <div class="navbar-brand hover-color">
+            HakD 2025: <span class="font-starjedi">To the Stars</span>
+          </div>
+          <div class="navbar-nav nav-button-container">
+            <a class="nav-link hover-color" href="index.html">Home</a>
+            <a class="nav-link hover-color" href="logistics.html">Logistics</a>
+            <a class="nav-link active" href="#">Workshops</a>
+            <a class="nav-link hover-color" href="assets/hakd2025-scenarios.pdf" target="_blank" rel="noopener noreferrer">Scenarios</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div id="title" class="container-fluid text-center">
+      <h1 class="display-1">Workshops</h1>
+    </div>
+
+    <!-- Descriptions -->
+    <div id="wk-desc-card" class="container text-center fancyborder">
+      <h2 class="display-5">Workshop Listing</h2>
+      <div class="text-content mx-5">
+        <p>Kick off the hackathon by diving into two workshops of your choice on Day 1. You’ll be choosing from 10 different hands-on sessions led by experienced volunteers and experts. Whether you'll be learning new tools, exploring new software, or refining your own technical skills, these workshops are designed to give you practical knowledge you can directly apply to your projects. Come curious, stay engaged, and use this opportunity wisely!</p>
+      </div>
+      <div class="row">
+
+        <div class="workshop col-12 col-md-6">
+          <div class="wk-inner fancyborder">
+            <div class="px-3">
+              <h2>Robot Wars</h2>
+              <p><b>Run by</b>: Elaine Wu</p>
+              <p><b>Description</b>: Introduction of Robot wars (fighting robots) by using ppts and videos to let students know what exactly it is, and then a little tournament.</p>
+              <p><b>Max capacity</b>: 16</p>
+              <p><b>Requirements</b>: None</p>
+            </div>
+          </div>
+        </div>
+        <div class="workshop col-12 col-md-6">
+          <div class="wk-inner fancyborder">
+            <div class="px-3">
+              <h2>Rocket Building - an intro to projectile motion</h2>
+              <p><b>Run by</b>: Jasmine Eklund, Terence Ng, Alan Yang, Max Zhang, Baron Song, Arnav Chhaparwal, Tanush Guha</p>
+              <p><b>Description</b>: Students will be introduced to the physics of projectile motion through kinematic equations and get the chance to build their very own rocket using plastic bottles, which they can then launch and discover how the rockets shape affects it's aerodynamics and how the addition of water inside the rocket being expelled as it's launched can change its trajectory.
+         </p>
+              <p><b>Max capacity</b>: 15</p>
+              <p><b>Requirements</b>: None</p>
+            </div>
+          </div>
+        </div>
+        <div class="workshop col-12 col-md-6">
+          <div class="wk-inner fancyborder">
+            <div class="px-3">
+              <h2 id="arduino-sensors">Arduino Sensor and Servo Lab: Measure, Move, and Create!</h2>
+              <p><b>Run by</b>: Ethan Liu, Jessica Yang</p>
+              <p><b>Description</b>: This hands-on workshop introduces participants to ultrasonic sensors and servo motors. Participants will learn how to measure distance using an ultrasonic sensor and control a servo motor to create interactive projects.</p>
+              <p>Recommended skill level: intermediate</p>
+              <p><b>Max capacity</b>: 15</p>
+              <p><b>Requirements</b>: <a href="#dl-arduino">Arduino IDE</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="workshop col-12 col-md-6">
+          <div class="wk-inner fancyborder">
+            <div class="px-3">
+              <h2 id="rpi-sensing">Raspberry Pi Pico and Sensing</h2>
+              <p><b>Run by</b>: Chase Yiu</p>
+              <p><b>Description</b>: What's better than making things move? Making them sense the world around us! Explore the fascinating world of Raspberry Pi Pico, one of the most versatile and powerful microcontrollers (so far). Get ready to unleash your creativity and programming skills to make them sense distance, brightness, rotation, or even program them to make your own joystick!</p>
+              <p>Some prior knowledge on Python and digital electronics (simply, how electricity works) is recommended.</p>
+              <p><b>Max capacity</b>: 12</p>
+              <p><b>Requirements</b>: <a href="#dl-thonny">Thonny IDE</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="workshop col-12 col-md-6">
+          <div class="wk-inner fancyborder">
+            <div class="px-3">
+              <h2 id="bioelectricity">Hands-On Bioelectricity: A Beginner’s Guide to EMG and Brain-Computer Interfaces</h2>
+              <p>Only available for Year 9 (Grade 8) and above</p>
+              <p><b>Run by</b>: Yuting Zheng, Calvin Liao</p>
+              <p><b>Description</b>: Have you ever imagined controlling a computer directly with your mind? Or what about a third robotic arm that moves as naturally as your own? In this hands-on workshop, we’ll explore the magic of bioelectricity. Use EMG sensors and Arduino to see the electric signals of your muscle movement in real-time, and even try controlling devices with your mind (well , almost!).</p>
+              <p><b>Max capacity</b>: 20</p>
+              <p><b>Requirements</b>: <a href="#dl-arduino">Arduino IDE</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="workshop col-12 col-md-6">
+          <div class="wk-inner fancyborder">
+            <div class="px-3">
+              <h2>Prototyping in Minecraft</h2>
+              <p>Only available for Year 8 (Grade 7) and below</p>
+              <p><b>Run by</b>: Dean An</p>
+              <p><b>Description</b>: Students will try out their ideas, either build a settlement or a prototype of a device, or anything exciting, in the virtual world of Minecraft.</p>
+              <p><b>Max capacity</b>: 20</p>
+              <p><b>Requirements</b>: <a href="#dl-minecraft">Minecraft Education</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="workshop col-12 col-md-6">
+          <div class="wk-inner fancyborder">
+            <div class="px-3">
+              <h2>Training and using machine learning models</h2>
+              <p><b>Run by</b>: Matt Chermside</p>
+              <p><b>Description</b>: Experience training some machine learning models to recognise patterns in data collected through sensors, and then evaluate their effectiveness.</p>
+              <p><b>Max capacity</b>: 15</p>
+              <p><b>Requirements</b>: None</p>
+            </div>
+          </div>
+        </div>
+        <div class="workshop col-12 col-md-6">
+          <div class="wk-inner fancyborder">
+            <div class="px-3">
+              <h2 id="dash-the-robot">Dash the Robot</h2>
+              <p><b>Run by</b>: Priyanka (Priya) Soni</p>
+              <p><b>Description</b>: Discover the wonderful world of the Wonder Workshop with Dash! Dash is a playful robot designed for easy access to the world of coding and robotics. Dash uses Bluetooth, 3 microphones, speakers, 3 processors, sensor fusion and LED lights to create a super fun user experience. In this interactive workshop, you will explore a variety of apps and move through a host of challenges with Dash. Come join the fun!</p>
+              <p><b>Max capacity</b>: 12</p>
+              <p><b>Requirements</b>: Go, Wonder, <a href="#dl-blockly">Blockly</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="workshop col-12 col-md-6">
+          <div class="wk-inner fancyborder">
+            <div class="px-3">
+              <h2>Come and have a slice of Raspberry Pi</h2>
+              <p><b>Run by</b>: Phil Whitaker</p>
+              <p><b>Description</b>: In this workshop you'll be introduced to the Raspberry Pi. This is aimed at Raspberry Pi beginners (or those in need of a refresher). You'll be provided with everything you need, just bring a can-do attitude. This workshop is suitable for those who may already have some Arduino (or other) experience, and want to learn how a more advanced board works - i.e. a board that has an OS and can be used with Python. You'll also use a breadboard and some simple I/O components.</p>
+              <p><b>Max capacity</b>: 10</p>
+              <p><b>Requirements</b>: None</p>
+            </div>
+          </div>
+        </div>
+        <div class="workshop col-12 col-md-6">
+          <div class="wk-inner fancyborder">
+            <div class="px-3">
+              <h2>Life cycle of a rocket</h2>
+              <p><b>Run by</b>: Xiaqing(Samuel)Liu</p>
+              <p><b>Description</b>: Imagine all the cool things you can explore by building a rocket-launch it, enter orbits, explore space, aim for the stars-but hey! Do you really know what exactly you're doing? Or, rather, do you know what you should do for any project, for anything? Simply pursuing your dream and dreaming a million dreams but not doing any of them certainly is not the solution. Join this workshop to find out. </p>
+              <p><b>Max capacity</b>: 20</p>
+              <p><b>Requirements</b>: None</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Sign up button -->
+    <div id="register" class="container fancyborder text-center">
+      <h2 class="display-5">Sign up!</h2>
+      <p>(Username and password will be shared at the event)</p>
+      <button class="btn" onclick="window.open('restricted/workshop-signup.html', '_blank')">Go to sign up form</button>
+    </div>
+
+    <div id="bringlist" class="container fancyborder">
+      <h2 class="display-5 text-center">Additional Requirements</h2>
+      <div class="text-content mx-5">
+        <p>Some workshops require you to download and install specific programs before the workshop begins. This section contains direct download links for any programs you may need.</p>
+      </div>
+
+      <div class="row">
+        <div class="workshop col-12 col-md-6">
+          <div class="wk-inner fancyborder">
+            <div class="px-3">
+              <h2 id="dl-thonny">Thonny IDE</h2>
+              <p>Required for: <a href="#rpi-sensing">Raspberry Pi Pico and Sensing</a></p>
+              <p>
+                Download Links:
+                <a href="workshop-files/thonny-4.1.7.exe">Windows</a>
+                <a href="workshop-files/thonny-4.1.7.pkg">Mac</a>
+                <a href="https://thonny.org/">Official website</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="workshop col-12 col-md-6">
+          <div class="wk-inner fancyborder">
+            <div class="px-3">
+              <h2 id="dl-arduino">Arduino IDE</h2>
+              <p>Required for: <a href="#arduino-sensors">Arduino Sensor and Servo Lab</a>, <a href="#bioelectricity">Hands-On Bioelectricity</a></p>
+              <p>
+                Download Links:
+                <a href="workshop-files/arduino-ide.exe">Windows</a>
+                <a href="workshop-files/arduino-ide_arm.dmg">Mac (Apple Silicon)</a>
+                <a href="workshop-files/arduino-ide_intel.dmg">Mac (Intel)</a>
+                <a href="https://www.arduino.cc/en/software">Official website</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="workshop col-12 col-md-6">
+          <div class="wk-inner fancyborder">
+            <div class="px-3">
+              <h2 id="dl-minecraft">Minecraft Education</h2>
+              <p>Required for: <a href="#minecraft-prototyping">Prototyping in Minecraft</a></p>
+              <p>
+                Download Links:
+                <a href="workshop-files/MinecraftEdu.exe">Windows</a>
+                <a href="workshop-files/MinecraftEdu.dmg">Mac</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="workshop col-12 col-md-6">
+          <div class="wk-inner fancyborder">
+            <div class="px-3">
+              <h2 id="dl-blockly">Blockly</h2>
+              <p>Required for: <a href="#dash-the-robot">Dash the Robot</a></p>
+              <p><a href="https://www.makewonder.com/en/apps/blockly/">Website</a></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
